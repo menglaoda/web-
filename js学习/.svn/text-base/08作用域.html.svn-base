@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//作用域：就是起作用的范围。或者说有效范围。
+			//局部变量就是定义在函数内部的变量，这个变量只能在函数内部使用，即作用域范围只是函数内部，另外，形参也是局部变量。
+			//全局变量就是定义在函数外部的变量，这个变量在任何函数中都有效，即作用域范围是当前文件的任何地方
+//			//注意：定义变量时省略var是不安全的，不过是合法的，不写var的时候会被解释是全局变量
+//			function   addNum(n){
+//				 n += 5 ;//n=15
+//			}
+//			var  a=10;
+//			addNum(a);           
+//          alert(a);
+			//形参值发生改变，而实参中的值不会变化
+			
+			var a = 10;//全局变量
+		    function m1(){
+				var a = 5;//局部变量
+		       // alert(a);//5
+		       var b =10;//局部变量
+		       c =30;//全局变量
+		    }
+		    m1();
+		   // console.log(b);//"Uncaught ReferenceError: b is not defined"
+		    //alert(a);//10   
+			console.log(c);//"30"
+			
+			//写一个函数判断一个年份是不是闰年
+			function fn3(n){
+				if((n%4==0 && n%100!=0) || n%400==0){
+					console.log(n+"是闰年");
+				}else{
+					console.log(n+"是平年");
+				}
+			}
+			fn3(2020);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
