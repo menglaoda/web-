@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.obox{
+				width: 678px;
+				height: 460px;
+				margin: 60px auto;
+			}
+			.box1{
+				height: 48px;
+				line-height: 48px;
+				border-bottom: solid 1px blue;
+			}
+			.img1{
+				float: left;
+				margin-top: 8px;
+				margin-right: 8px;
+			}
+			.oh3{
+				float: left;
+				font-size: 24px;
+				color: blue;
+			}
+			.img2{
+				float: right;
+				margin-top: 14px;
+			}
+			.list{
+				list-style: none;
+				margin-top: 25px;
+			}
+			.list li{
+				height: 33px;
+				margin-bottom: 10px;
+				position: relative;
+				line-height: 33px;
+			}
+			.list div{
+				width: 155px;
+				height: 33px;
+				text-align: center;
+				
+				background: url(img/未标题-2.jpg) 0px 0px/100% 100%;
+			}
+			p{
+				position: absolute;
+				top: 0px;
+				left: 166px;
+				width: 385px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			span{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="obox">
+			<div class="box1">
+				<img class="img1" src="img/未标题-1.png" />
+				<h3 class="oh3">媒体西大</h3>
+				<img class="img2" src="img/未标题-2.png" />
+			</div>
+			<ul class="list">
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大开学季，我在广西大学等你开学季，我在广西大学等你学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我开学季，我在广西大学等你开学季，我在广西大学等你在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开开学季，我在广西大学等你开学季，我在广西大学等你学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+				<li>
+					<div>学习强国</div>
+					<p>开学季，我在广西大学等你</p>
+					<span>2020-09-10</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h3>1.制作一个九宫格</h3>
+		<table align="center"  bordercolor="blue" cellspacing="10" cellpadding="10"  border="4" width="300" height="300">
+			<tr align="center">
+				<td>1</td>
+				<td >2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td align="center" bgcolor="orange">5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</table>
+		<h3>2.合并单元格</h3>
+		<table align="center"  bordercolor="blue" cellspacing="0" cellpadding="0"  border="1"  height="300">
+			<caption>表格标题</caption>
+			<tr>
+				<th width="300" colspan="3">1</th>
+				
+			</tr>
+			<tr>
+				<td width="100" rowspan="2">4</td>
+				<td rowspan="2" colspan="2">5</td>
+
+			</tr>
+			<tr>
+
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</table>
+	</body>
+</html>

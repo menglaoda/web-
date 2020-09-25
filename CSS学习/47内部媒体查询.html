@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				background: red;
+			}
+			
+			/*@media screen and (min-width: 800px) {
+				.box{
+					width: 200px;
+					height: 200px;
+					background: blue;
+				}
+			}*/
+			
+			/*可以使用 and 表示同时满足这两者时生效，达到限定范围*/
+			/*@media screen and (min-width: 800px) and  (max-width: 1000px){
+				.box{
+					width: 200px;
+					height: 200px;
+					background: blue;
+				}
+			}*/
+			
+			/*逗号 , 被用来表示 并列 和 或者*/
+			/*@media screen and (max-width: 800px) ,screen and  (min-width: 1000px){
+				.box{
+					width: 200px;
+					height: 200px;
+					background: blue;
+				}
+			}*/
+			
+			/*//6、排除符合表达式的设备*/
+			@media not screen and (min-width: 800px) {
+				.box{
+					width: 200px;
+					height: 200px;
+					background: blue;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

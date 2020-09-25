@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				color: red;
+			}
+			.pp{
+				color: blue;
+			}
+			body #p1{
+				color: gold;
+			}
+			body #p1{
+				color: red;
+			}
+			#p1{
+				color: black;
+			}
+			
+		</style>
+		<link rel="stylesheet" href="css/05.css" />
+	</head>
+	<body>
+		<h3>当不同选择符的样式设置有冲突的时候，高权重选择符的样式会覆盖低权重选择符的样式</h3>
+		<h3>相同权重的选择符，样式遵循就近原则：哪个选择符最后定义，就采用哪个选择符样式。</h3>
+		<p id="p1" class="pp">hello word</p>
+<!--				
+		类型选择符的权重为1
+		class选择符的权重为10
+		id选择符的权重为100
+		伪类选择符的权重为10
+		包含选择符的权重：为包含选择符的权重之和
+		继承样式的权重为0
+		群组集合权重为他本身
+		内联为1000-->
+		
+	</body>
+</html>

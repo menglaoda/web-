@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: fixed;
+				top: 0px;
+				left: 0px;/*初始状态*/
+				animation: mybox 2s steps(1,start) 0s infinite alternate running both;
+			}
+			.box:hover{
+				animation-play-state: paused;
+			}
+			/*定义一个帧动画*/
+			/*@keyframes mybox{
+			 	动画第一帧
+				from{left: 200px;}
+				动画最后一帧
+				to{left: 1000px;}
+			}*/
+			
+			@keyframes mybox{
+				0%{left: 0px;top: 0px;}
+				25%{left: 1000px;top: 0px;}
+				50%{left: 1000px;top: 500px;}
+				75%{left: 0px;top: 500px;}
+				100%{left: 0px;top: 0px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

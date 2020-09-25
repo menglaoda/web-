@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				margin: 20px;
+			}
+			.box1{
+				width: 100px;
+				height: 200px;
+				border: solid 1px black;
+				/*hidden：内容会被修剪，并且其余内容是不可见的；*/
+				/*scroll：内容会被修剪，但是浏览器会显示滚动条，以便查看其余的内容;*/
+				/*auto：如果内容被修剪，则浏览器会显示滚动条，以便查看其他的内容;*/
+				overflow:hidden;
+			}
+			.box2{
+				width: 100px;
+				height: 200px;
+				border: solid 1px black;
+				overflow:scroll;
+			}
+			.box3{
+				width: 100px;
+				height: 200px;
+				border: solid 1px black;
+				/*hidden：内容会被修剪，并且其余内容是不可见的；*/
+				/*scroll：内容会被修剪，但是浏览器会显示滚动条，以便查看其余的内容;*/
+				overflow:auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书J可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书JFK但是反抗军的首付款就是</div>
+		<div class="box2">可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书J可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书JFK但是反抗军的首付款就是</div>
+		<div class="box3">可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书J可大幅度减少客户付款节点是否和发动机是客户反抗军的首付款圣诞节回复房价肯定是分开计算的话罚款决定书JFK但是反抗军的首付款就是</div>
+	</body>
+</html>

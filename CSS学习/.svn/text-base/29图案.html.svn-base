@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 200px;
+				height: 200px;
+				background: red;
+				margin-left: 50px;
+				margin-top: 20px;
+				position: relative;
+				border-radius: 10px;
+			}
+			.box1:before{
+				content: "";
+				width: 30px;
+				height: 30px;
+				background: white;
+				position: absolute;
+				top: -10px;
+				left: -10px;
+				border-radius: 50%;
+			}
+			.box1:after{
+				content: "";
+				width: 30px;
+				height: 30px;
+				background: white;
+				position: absolute;
+				top: -10px;
+				left: 180px;
+				border-radius: 50%;
+			}
+			.obox{
+				width: 200px;
+				border-radius: 100%;
+				border: solid 5px red;
+				margin-left: 50px;
+				margin-top: 20px;
+			}
+			.box2{
+				width: 200px;
+				height: 0px;
+				
+				position: relative;
+				border-radius: 100%;
+				border-top: solid 100px red;
+				border-bottom: solid 100px #ccc;
+			}
+			.box2:after{
+				content: "";
+				width: 20px;
+				height: 20px;
+				border: solid 40px red;
+				background: #ccc;
+				position: absolute;
+				top: -50px;
+				left: 0px;
+				border-radius: 100%;
+			}
+			.box2:before{
+				content: "";
+				width: 20px;
+				height: 20px;
+				border: solid 40px #ccc;
+				background: red;
+				position: absolute;
+				top: -50px;
+				left: 100px;
+				border-radius: 100%;
+			}
+			.box3{
+				width: 200px;
+				height: 80px;
+				border: solid 1px black;
+				margin: 20px 50px;
+				border-radius: 6px;
+				position: relative;
+			}			
+			.box3:before{
+				content: "";
+				width: 0px;
+				height: 0px;
+				border: solid 15px rgba(0,0,0,0);
+				border-top:solid 20px black ;
+				position: absolute;
+				top: 80px;
+				left: 20px;
+			}
+			.box3:after{
+				content: "";
+				width: 0px;
+				height: 0px;
+				border: solid 15px rgba(0,0,0,0);
+				border-top:solid 20px white ;
+				position: absolute;
+				top: 79px;
+				left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="obox">
+			<div class="box2"></div>
+		</div>
+		<div class="box3"></div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.p1{
+				font-family: "宋体","arial black",arial,"微软雅黑";/*字体类型*/
+				font-size: 16px;/*字体大小*/
+				font-size: 30px;
+				font-size: 40;
+				font-size: xx-large;
+				color: red;
+				color: #0000FF;
+				color: rgb(0,0,0);
+				color: rgba(0,0,0,0);/*最后一个参数表示透明度，取值范围[0,1],0表示透明*/
+				color: #f4f305;
+				font-weight: bolder;/*加粗*/
+				font-weight: bold;
+				font-weight: 900;
+				font-style: oblique;/*倾斜*/
+				font-variant: small-caps;/*小型的大写字母*/
+				font:oblique small-caps 900 xx-large "宋体","arial black",arial,"微软雅黑";/*简写时倒数第一位必须是字体类型，倒数第二位必须是字体大小*/
+			}
+			h1{
+				font-weight: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>一级标题</h1>
+		<p>hello word</p>
+		<p class="p1">hello word HELLO hello</p>
+	</body>
+</html>

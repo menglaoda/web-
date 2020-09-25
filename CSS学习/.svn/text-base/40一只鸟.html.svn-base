@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.obox{
+				width: 140px;
+				height: 85px;
+				position: fixed;
+				top: 100px;
+				left: 0px;
+				animation: myobox 9s linear both;
+			}
+			@keyframes myobox{
+				from{left: 0px;}
+				to{left: 1500px;}
+			}
+			.box{
+				width: 140px;
+				height: 85px;
+				background: url(img/bird1.png);
+				animation: mybox step-start 1s 6 both;
+			}
+			@keyframes mybox{
+				0%{background: url(img/bird1.png);}
+				14%{background: url(img/bird2.png);}
+				28%{background: url(img/bird3.png);}
+				42%{background: url(img/bird4.png);}
+				56%{background: url(img/bird5.png);}
+				70%{background: url(img/bird6.png);}
+				85%{background: url(img/bird7.png);}
+				100%{background: url(img/bird8.png);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="obox">
+			<div class="box"></div>
+		</div>
+	</body>
+</html>

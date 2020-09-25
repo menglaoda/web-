@@ -1,0 +1,4 @@
+/*在这里直接写css代码*/
+span{
+	color: red;
+}

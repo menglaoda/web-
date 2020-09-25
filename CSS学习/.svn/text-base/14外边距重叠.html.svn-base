@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*重置样式*/
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin-bottom: 50px;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background: blue;
+				margin-top: 70px;/*最最大值为准*/
+			}
+			.box3{
+				width: 200px;
+				height: 200px;
+				background: green;
+				/*padding-top: 50px;*/
+				overflow: hidden;
+			}
+			.box4{
+				width: 100px;
+				height: 100px;
+				background: gold;
+				margin: 50px auto;
+				border-radius: 10px;/*圆角属性*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3">
+			<div class="box4"></div>
+		</div>
+	</body>
+</html>

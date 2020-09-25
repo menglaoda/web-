@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: red;
+				padding: 10px;
+				margin: 10px;
+				border: solid 5px black;
+				display: block;/*块状元素*/
+			}
+			.box2{
+				background: blue;
+			}
+			span{
+				width: 100px;
+				height: 100px;
+				background: red;
+				display: inline;/*内联元素*/
+				padding: 10px;
+				margin: 30px;/*上下方向有问题*/
+				border:solid 5px black;
+			}
+			img{
+				width: 100px;
+				padding: 10px;
+				margin: 20px;
+				display: inline-block;/*行内块元素*/
+				background: red;
+				border: solid 5px black;
+			}
+			.box3{
+				width: 100px;
+				height: 100px;
+				background: green;
+			}
+			b{
+				background: blue;
+				width: 100px;
+				height: 100px;
+				display: none;/*隐藏*/
+				/*当元素设置了float属性后，就相当于给该元素加了display:block;属性；*/
+			}
+		</style>
+	</head>
+	<body>
+		<h3>1.块状元素，特点：块状元素会按顺序自上而下排列，定义自己的宽度和高度</h3>
+		<div class="box1"></div>
+		<div class="box1 box2"></div>
+		<h3>2.内联元素：特点：按顺序从左往右排列，不能定义它的宽和高</h3>
+		<span>hello word</span>
+		<span>hello word</span>
+		<h3>3.行内块元素:特点：按顺序从左往右排列，定义自己的宽度和高度</h3>
+		<img src="../HTML学习/img/b1.png" />
+		<img src="../HTML学习/img/b1.png" />
+		<b>加粗</b>
+	
+	</body>
+</html>

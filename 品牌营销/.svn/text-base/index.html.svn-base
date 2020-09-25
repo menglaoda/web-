@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>品牌营销</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="box1">
+			<img src="img/ia_100000002.jpg" />
+			<h1>一 站 式 品 牌 营 销 咨 询 团 队</h1>
+			<p>打通品牌+产品+流量+变现+持续变现的营销闭环</p>
+			<span>品牌设计公司.</span>
+		</div>
+		<ul class="box2">
+			<li>
+				<img src="img/ia_100000003.jpg" />
+				<span>品牌VI</span>
+			</li>
+			<li>
+				<img src="img/ia_100000004.jpg" />
+				<span>品牌VI</span>
+			</li>
+			<li>
+				<img src="img/ia_100000005.jpg" />
+				<span>品牌VI</span>
+			</li>
+			<li>
+				<img src="img/ia_100000006.png" />
+				<span>品牌VI</span>
+			</li>
+		</ul>
+		<div class="box3"><h3>品牌全价值综合体系构建者<br />专注创造和管理品牌</h3></div>
+		<div class="box4">
+			<h3>服务项目</h3>
+			<ul>
+				<li>
+					<h3>营销策划</h3>
+					<p>您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素您还可以添加图标，按钮，图片等常用元素</p>
+				</li>
+				<li>
+					<h3>营销策划</h3>
+					<p>您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素您还可以添加图标，按钮，图片等常用元素</p>
+				</li>
+				<li>
+					<h3>营销策划</h3>
+					<p>您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素您还可以添加图标，按钮，图片等常用元素</p>
+				</li>
+			</ul>
+		</div>
+		<div class="box5">
+			<h3>合作品牌</h3>
+			<div class="imgbox">
+				<img src="img/ia_100000007.png" />
+				<img src="img/ia_100000008.png" />
+				<img src="img/ia_100000009.png" />
+				<img src="img/ia_100000010.png" />
+			</div>
+		</div>
+		<div class="box6">
+			<h3>合作品牌</h3>
+			<p>获取联系</p>
+			<a href="#">电话联系：500-5656-5656</a>
+			<a href="#">电话联系：500-5656-5656</a>
+		</div>
+		<div class="box7">
+			<img src="img/ia_100000002.jpg" />
+			<p><span>服务条款</span><span>隐私政策</span><span>用户说明</span></p>
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			input{
+				width: 200px;
+				height: 30px;
+				/*border: solid 1px black;*/
+				outline: medium;
+			}
+			input:hover{
+				/*border: solid 1px blue;*/
+			}
+			.box3{
+				background: red;
+				overflow: hidden;
+				opacity: 0.5;/*透明度，取值范围[0,1]*/
+				filter:alpha(opacity=50);
+			}
+			.box3 img{
+				/*display: block;*/
+				float: left;
+			}
+			p{
+				color: gold !important;
+			}
+			p:hover{
+				cursor: copy;/*鼠标指针*/
+				/*pointer*/
+				
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" />
+		<div id="">
+			<div></div>
+		</div>
+		<p style="color: red;">hello word</p>
+		<div class="box3">
+			<img src="../HTML学习/img/a1.jpg" />
+		</div>
+	</body>
+</html>

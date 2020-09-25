@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 900px;
+				height: 100px;
+				background: red;
+			}
+			.box2{
+				width: 20vh;/*1vh等于视窗高度的1%。*/
+				height: 50vw;/*1vw等于视窗宽度的1%*/
+				background: blue;
+			}
+			.box3{
+				width: 20vmin;/*取vw和vh中较小的那个。*/
+				height: 50vmax;/*取vw和vh中较大的那个。*/
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>hello word</h1>
+		</div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 580px;
+				height: 330px;
+				border: solid 10px black;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.box img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				transition: all 1s;
+			}
+			.box:hover img{
+				width: 120%;
+				height: 120%;
+				top: -10%;
+				left: -10%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="../HTML学习/img/a1.jpg" />
+		</div>
+	</body>
+</html>

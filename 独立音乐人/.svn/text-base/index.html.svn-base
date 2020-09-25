@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>独立音乐人</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="box1 obox">
+			<div class="box1-con idx">
+				<img class="logo" src="img/ia_100000000.png" />
+				<h3>音乐是建筑在美的基础上面的一种艺术</h3>
+				<a href="#">音乐作品集</a>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="box2-con">
+				<div class="box2-l box2-left obox">
+					<div class="idx">
+						<h6>A B O U T</h6>
+						<h3>歌手简介</h3>
+						<p><span>姓名</span>hurriedly </p>
+						<p><span>出生</span>1992年3月23</p>
+						<p><span>作品</span>传奇、风吹麦浪、贝加尔湖畔、假如爱有天意 </p>
+						<p><span>成就 </span>最佳唱作歌手、第11届音乐风云榜年度颁奖典礼内地最佳男歌手、第11届音乐风云榜年度颁奖典礼最佳制作人奖</p>
+					</div>
+				</div>
+				<div class="box2-l box2-right obox">
+					<div class="idx idx2">
+						<h6>COOPREATION</h6>
+						<h3>音乐商业合作</h3>
+						<p><span>电话</span>18896569866 </p>
+						<p><span>微信</span>qifeiye1234545 </p>
+						<p><span>邮箱</span>website@qq.com</p>
+						<p><span>地址</span>苏州市星海街56号加成大厦 </p>
+					</div>
+				</div>
+			</div>
+			<p>F O L L O W</p>
+			<h3>更多社交平台请关注</h3>
+			<span class="s1"></span>
+			<span class="s2"></span>
+			<span class="s3"></span>
+			<span class="s4"></span>
+		</div>
+		<div class="box3 obox">
+			<span>歌手个人展示简单模板.</span>
+		</div>
+	</body>
+</html>

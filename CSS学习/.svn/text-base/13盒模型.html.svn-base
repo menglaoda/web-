@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 140px;
+				height: 165px;
+				border: solid 5px black;
+				padding: 10px;/*四个方向*/
+				padding: 10px 20px;/*上下  左右*/
+				padding: 10px 20px 30px;/*上  左右  下*/
+				padding: 10px 20px 30px 40px;/*上  右  下  左*/
+				padding-left: 40px;
+				padding-bottom: 20px;
+				padding-top: 15px;
+				padding-right: 20px;
+				background: pink;
+			}
+			.box>div{
+				width: 50px;
+				background: blue;
+				color: white;
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				border: solid 5px black;
+				margin: 10px;/*同padding*/
+				margin: 10px 20px;
+				margin: 10px 20px 30px;
+				margin: 10px 20px 30px 40px;
+				margin-left: 100px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				margin: 0 auto;/*水平居中*/
+			}
+			.box2>div{
+				width: 50px;
+				background: blue;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>padding:用来调整内容(子元素)在容器中的位置关系</h3>
+		<h3>margin:调整容器位置</h3>
+		<div class="box">
+			<div>地方开始看的份健康</div>
+		</div>
+		<div class="box2">
+			<div>地方开始看的份健康</div>
+		</div>
+	</body>
+</html>

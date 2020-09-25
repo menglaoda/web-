@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.obox{
+				width: 400px;
+				height: 630px;
+				background: url(img/b0.jpg);
+				margin: 50px auto;
+				text-align: center;
+				color: white;
+			}
+			.oh2{
+				font-size: 50px;
+				height: 50px;
+				line-height: 50px;
+				font-weight: 500;
+				padding-top: 45px;
+			}
+			.oh5{
+				font-size: 13px;
+				margin: 4px 0px 0px;
+			}
+			.oh3{
+				font-size: 42px;
+			}
+			.v1{
+				width: 322px;
+				height: 46px;
+				border: solid 2px red;
+				border-radius: 6px;
+				text-align: center;
+				color: #999;
+				margin-top: 48px;
+				outline: medium;/*去掉轮廓*/
+			}
+			.btn{
+				width: 190px;
+				height: 53px;
+				margin: 25px auto 43px;
+				background: url(img/b2.png) no-repeat 0px 0px/100% 100%;
+			}
+			.box1{
+				width: 352px;
+				height: 20px;
+				margin: 0 auto;
+			}
+			.line1{
+				width: 126px;
+				border-top: solid 1px white;
+				float: left;
+				margin-top: 9.5px;
+			}
+			.line2{
+				width: 126px;
+				border-top: solid 1px white;
+				float: right;
+				margin-top: 9.5px;
+			}
+			.list {
+				text-align: left;
+				width: 352px;
+				margin: 0 auto;
+				list-style-position: inside;
+				margin-top: 10px;
+			}
+			.list li{
+				margin-bottom: 4px;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="obox">
+			<h2 class="oh2">新人有理</h2>
+			<h5 class="oh5">立享</h5>
+			<h3 class="oh3">20元</h3>
+			<h5 class="oh5">现金卷</h5>
+			<input class="v1" type="text" value="请输入11位手机号" />
+			<div class="btn"></div>
+			<div class="box1">
+				<div class="line1"></div>
+				<span>活动规则</span>
+				<div class="line2"></div>
+			</div>
+			<ol class="list">
+				<li>注册李娟有限期：以卷面信息为准</li>
+				<li>注册李娟有限期：以卷面信息为准</li>
+				<li>注册李娟有限期：以卷面信息为准</li>
+			</ol>
+		</div>
+	</body>
+</html>

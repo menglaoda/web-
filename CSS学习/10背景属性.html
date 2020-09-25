@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 5000px;
+			}
+			.box{
+				width: 300px;
+				height: 500px;
+				border: solid 1px black;
+				background-color: pink;/*背景色*/
+				background-image: url(../HTML学习/img/a1.jpg);/*背景图*/
+				background-repeat: no-repeat;/*平铺属性*/
+				background-attachment:scroll ;/*背景图固定*/
+				background-position:top center  ;/*背景图位置*/
+				background-position:10px 260px;/*水平，垂直*/
+				background-position:0px 0px;/*第二个参数默认为center*/
+				background-size: contain;/*背景图大小*/
+				background-size: 100px 200px;/*宽度，高度*/
+				background-size: 200px;
+				background:pink  url(../HTML学习/img/a1.jpg) no-repeat scroll 0px 0px/200px;/*简写*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

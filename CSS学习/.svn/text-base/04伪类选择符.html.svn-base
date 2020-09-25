@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*初始状态*/
+			.a1:link{
+				color: black;
+			}
+			
+			/*被访问后的状态*/
+			.a1:visited{
+				color: red;
+			}
+			
+			/*鼠标移动到链接上的状态*/
+			.a1:hover{
+				background-color: gold;
+			}
+			
+			/*鼠标按下时的状态*/
+			.a1:active{
+				background: green;
+			}
+			
+			
+			/*鼠标移动到链接上的状态*/
+			.p1:hover{
+				background-color: gold;
+			}
+			
+			/*鼠标按下时的状态*/
+			.p1:active{
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="a1" href="#">baidu </a>
+		<p class="p1">hello word</p>
+	</body>
+</html>

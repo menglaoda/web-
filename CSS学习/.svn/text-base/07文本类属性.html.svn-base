@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				text-align: center;/*水平对齐*/
+				line-height: 200px;/*行高*/
+				line-height: 10;/*倍行高*字体大小=行高*/
+				text-decoration:line-through;/*文本修饰*/
+			}
+			img{
+				vertical-align:middle ;/*垂直对齐方式*/
+			}
+			a{
+				text-decoration: none;
+			}
+			p{
+				text-indent: 32px;/*首行缩进*/
+				letter-spacing: 5px;/*字间距*/
+				word-spacing: 50px;/*词间距*/
+				text-transform: uppercase;/*大小写*/
+				text-shadow: 0px 0px 10px red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">hello word</div>
+		<img src="../HTML学习/img/a1.jpg" />
+		<span>hahah</span>
+		<a href="#">baidu</a>
+		<p> 就 hello 范德萨范德萨巨化股份手机发嘀咕分段函数规范化圣诞节规范化建设的官方发的时刻胡椒粉和会计师大后方可是大家罚款决定书房价快速导航付款节点是否发动机开始分化迪斯科解放和</p>
+	</body>
+</html>
