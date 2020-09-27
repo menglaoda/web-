@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//1.定义数组
+			var arr1 = new Array();//空数组
+			
+			//2.定义一个长度为10的数组
+			var arr2 = new Array(10);
+			
+			//3.定义一个长度为2的数组，数组元素分别为10，20
+			var arr3 = new Array(10,20);
+			
+			//4.字面量方式定义数组
+			var arr4 = [];//空数组
+			var arr5 = [5,15];//长度为2的数组，数组元素分别为5，15
+			console.log(typeof arr5);
+			
+			
+			var arr6 = [1,33,44,55,66,77,88,99,122,434,666];
+			// 长度 length
+			console.log(arr6.length);
+			
+			//通过下标去访问数组元素，下标从0开始
+			console.log(arr6[3]);
+			console.log(arr6[arr6.length-1]);//最后一个数组元素
+		
+			//遍历数组元素
+//			for(var i=0;i<arr6.length;i++){
+//				document.write(arr6[i]+"<br />");
+//			}
+			
+			//for in 快速遍历
+			//求和
+			var s= 0;
+			for(i in arr6){
+				//document.write(arr6[i]+"<br />");
+				s+=arr6[i];
+			}
+			console.log(s);
+
+			//改变数组中某个元素
+			arr6[2]=100;
+			console.log(arr6);
+			
+			//让数组中的元素交换位置（重要）
+			var arr7 = [10,20];
+			var a1 = arr7[0];
+			arr7[0]=arr7[1];
+			arr7[1]=a1;
+			console.log(arr7);
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

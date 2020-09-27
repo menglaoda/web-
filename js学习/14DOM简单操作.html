@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var p1 = document.getElementById("p1");
+				//获取值innerHTML（表单控件用value,其它标签用innerHTML）
+				console.log(p1.innerHTML);
+				
+				//修改
+				p1.innerHTML = "你好世界！";
+				
+				//修改样式
+				p1.style.color = "red";
+				p1.style.backgroundColor ="pink";
+				p1.style.fontSize = 30+"px";//驼峰写法
+			}
+		</script>
+	</head>
+	<body>
+		<p id="p1">hello word</p>
+	</body>
+</html>
