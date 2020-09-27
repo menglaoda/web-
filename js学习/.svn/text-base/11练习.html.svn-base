@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			@media screen and (max-width: 480px) {
+				input{
+					width: 50px;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var v1 = document.getElementById("v1");
+				var btn1 = document.getElementById("btn1");
+				btn1.onclick = function(){
+					alert(fn1(v1.value));10
+				}
+				//递归函数计算阶乘
+				function fn1(n){
+					return n>1?n*fn1(n-1):1;
+				}
+				
+				var v2 = document.getElementById("v2");
+				var v3 = document.getElementById("v3");
+				var v4 = document.getElementById("v4");
+				var btn2 = document.getElementById("btn2");
+				btn2.onclick = function(){
+					var y = v2.value;
+					var m = v3.value;
+					var d = v4.value;
+					if(y>=1 &&y<10000){
+						if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+							if(d>=1&&d<=31){
+								alert(y+"年"+m+"月"+d+"日"+"是个正确日期！");
+							}else{
+								alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+							}
+						}else if(m==4||m==6||m==9||m==11){
+							if(d>=1&&d<=30){
+								alert(y+"年"+m+"月"+d+"日"+"是个正确日期！");
+							}else{
+								alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+							}
+						}else if(m==2){
+							if((y%4==0 &&y%100!=0)||y%400==0){
+								if(d>=1&&d<=29){
+									alert(y+"年"+m+"月"+d+"日"+"是个正确日期！");
+								}else{
+									alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+								}
+							}else{
+								if(d>=1&&d<=28){
+									alert(y+"年"+m+"月"+d+"日"+"是个正确日期！");
+								}else{
+									alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+								}
+							}
+						}else{
+							alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+						}
+					}else{
+						alert(y+"年"+m+"月"+d+"日"+"是个错误日期！");
+					}
+				}
+				
+				//3.制作一个简易计算器
+				var v5 = document.getElementById("v5");
+				var v6 = document.getElementById("v6");
+				var v7 = document.getElementById("v7");
+				var v8 = document.getElementById("v8");
+				var btn3 = document.getElementById("btn3");
+				btn3.onclick = function(){
+					if(v6.value=="+"){
+						v8.value=parseFloat(v5.value)+(v7.value-0);
+					}else if(v6.value=="-"){
+						v8.value=v5.value-v7.value;
+					}else if(v6.value=="*"){
+						v8.value=v5.value*v7.value;
+					}else if(v6.value=="/"){
+						v8.value=v5.value/v7.value;
+					}else{
+						v8.value="输入有误";
+					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h3>1. 写一个递归函数计算n的阶乘,</h3>
+		<input id="v1" type="text" placeholder="请输入一个数" />
+		<button id="btn1">计算</button>
+		<h3>2. 判断某一个日期是否为正确的日期</h3>
+		<input id="v2" type="text" placeholder="请输入年份[1,10000]" />
+		<input id="v3" type="text" placeholder="月" />
+		<input id="v4" type="text" placeholder="日" />
+		<button id="btn2">判断</button>
+		<h3>3.制作一个简易计算器</h3>
+		<input id="v5" type="text" />
+		<select id="v6">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input id="v7" type="text" />=
+		<input id="v8" type="text" />
+		<button id="btn3">计算</button>
+	</body>
+</html>
