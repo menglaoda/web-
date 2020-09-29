@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var a1 = 10.5;
+			console.log(Math.round(a1));
+			
+			//Math.random()          //返回(0-1)之间的随机数
+			console.log(Math.random());
+			
+			//例：获取[0,10]中的随机整数
+			console.log(Math.round(Math.random()*10));
+			
+			//例：随机获取一个小写字母
+			var a2 = Math.round(Math.random()*26)+97;//[97,122]
+			console.log(String.fromCharCode(a2));
+			
+			//例：随机获取一个大写字母
+			for(var i=0;i<6;i++){
+				var d2 = Math.round(Math.random()*26)+65;
+				console.log(String.fromCharCode(d2));
+			}
+			
+			
+			//Math.max(num1, num2)  //返回较大的数
+//			Math.min(num1, num2)   //返回较小的数
+//			Math.abs(num)     //绝对值
+//			Math.ceil(19.3)     //向上取整
+//			Math.floor(11.8)    //向下取整
+			var a3 = 10,a4=20;
+			console.log(Math.max(a3,a4));
+			console.log(Math.ceil(10.01));//11
+			console.log(Math.floor(10.09));//10
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
