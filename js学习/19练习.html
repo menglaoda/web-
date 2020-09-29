@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 20px;
+				border: solid 1px black;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			#box2{
+				width: 0px;
+				height: 20px;
+				background: red;
+			}
+			#box3{
+				width: 200px;
+				height: 200px;
+				background: red;
+				margin-bottom: 10px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				//1、实现秒表功能 : 显示时,分,秒 ，毫秒, 点击按钮开始计时
+				var op = document.querySelectorAll("p");
+				var btn = document.querySelectorAll("button");
+				(function(){
+					var h = 0;
+					var m = 0;
+					var s = 0;
+					var ms = 0;
+					var timer;
+					btn[0].onclick = function(){
+						h = 0;
+						m = 0;
+						s = 0;
+						ms = 0;
+						clearInterval(timer);
+						timer = setInterval(mytime,50);	
+					}
+					function mytime(){
+						ms+=50;
+						if(ms==1000){
+							ms=0;
+							s+=1;
+						}
+						if(s==60){
+							s=0;
+							m+=1;
+						}
+						if(m==60){
+							m=0;
+							h+=1;
+						}
+						op[0].innerHTML = fn(h)+"时"+fn(m)+"分"+fn(s)+"秒"+fn(ms)+"毫秒";
+					}
+					btn[1].onclick = function(){
+						if(this.innerHTML=="暂停"){
+							this.innerHTML="继续";
+							clearInterval(timer);
+						}else{
+							this.innerHTML="暂停";
+							timer = setInterval(mytime,50);
+						}
+					}
+				})();
+				//补0函数
+				function fn(n){
+					return n>=10?n:"0"+n;
+				}
+				
+				//第二道题
+				(function(){
+					setInterval(function(){
+						var d = new Date();
+						var y = d.getFullYear();
+						var m = d.getMonth();
+						var day = d.getDate();
+						var w = d.getDay();//0-6
+						var h = d.getHours();
+						var m1 = d.getMinutes();
+						var s = d.getSeconds();
+						var arr = ["天","一","二","三","四","五","六"];
+						op[1].innerHTML = y+"年"+fn(m+1)+"月"+fn(day)+"日 "+fn(h)+":"+fn(m1)+":"+fn(s)+" 星期"+arr[w];
+					},1000)
+				})();
+				
+				//第三道题
+				(function(){
+					var box2 = document.getElementById("box2");
+					var i=0;
+					var timer = setInterval(function(){
+						i++;
+						if(i==100){
+							clearInterval(timer);
+						}
+						op[2].innerHTML = i+"%";
+						box2.style.width = i*2+"px";
+					},100)
+				})();
+				
+				//第四道题
+				(function(){
+					var box3 = document.getElementById("box3");
+					var arr =  ["red", "blue", "yellow", "green", "black", "orange"];
+					var i = 0;
+					var timer;
+					btn[2].onclick = function(){
+						clearInterval(timer);
+						timer = setInterval(function(){
+							i++;
+							if(i==arr.length){
+								i=0;
+							}
+							box3.style.backgroundColor = arr[i];
+						},100)
+					}
+				})();
+			}
+		</script>
+	</head>
+	<body>
+		<h3>1、实现秒表功能 : 显示时,分,秒 ，毫秒, 点击按钮开始计时</h3>
+		<p>xx时xx分xx秒xxx毫秒</p>
+		<button>开始</button>
+		<button>暂停</button>
+		<h3>2、页面上动态显示当前日期</h3>
+		<p>2020年09月29日 14:24:30 星期二</p>
+		<h3>3.进度条</h3>
+		<div class="box1">
+			<div id="box2"></div>
+		</div>
+		<p>0%</p>
+		<h3>4.变颜色</h3>
+		<div id="box3"></div>
+		<button>开始变色</button>
+	</body>
+</html>
